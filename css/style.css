@@ -1,0 +1,422 @@
+* ,*::after, *::before{
+ box-sizing:border-box;
+}
+
+body {
+    background: #fefbf5;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: #111;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: block;
+}
+
+button {
+    z-index: 4;
+    cursor: pointer;
+    position: fixed;
+    left: 35px;
+    top: 8px;
+    border-radius: 20px;
+    background: #fefbf5;
+    color: #fefbf5;
+    border-color: #111;
+    font-size: 20px;
+}
+
+main {
+    position: absolute;
+    top: 50px;
+    padding: 20px;
+}
+
+#icono {
+    color: #111;
+}
+
+#navbar {
+    background: #fefbf5;
+    z-index: 3;
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 8%;
+    animation: menucolor 10s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+
+#navbar li {
+    list-style: none;
+    display: inline;
+}
+
+#welcome-section {
+    position: relative;
+    text-align: center;
+    height: 100vh;
+}
+
+#proyecto-1 {
+    background: #c2ad70;
+}
+
+#proyecto-2 {
+    background: #849db8;
+}
+
+#proyecto-3 {
+    background: #72a697;
+}
+
+#proyecto-4 {
+    background: #45a146;
+}
+
+#proyecto-5 {
+    background: #ebadae;
+}
+
+#proyecto-6 {
+    background: #a369af;
+}
+
+#proyecto-7 {
+    background: #999999;
+}
+
+#logo, #logo-2, #logo-3, #logo-4, #logo-5, #logo-6, #logo-7 {
+    color: #111;
+    padding-right: 3%;
+}
+
+#logo-8 {
+    color: #111;
+    padding-right: 3%;
+    padding-top: 3%;
+}
+
+.iconos {
+    text-align: center;
+}
+
+.link-nav {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    position: relative;
+    left: 10%;
+    padding: 5px;
+    bottom: 5px;
+}
+
+.link-nav:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.enunciado {
+    font-family: 'Arial Black';
+}
+
+.presentacion {
+    text-align: justify;
+}
+
+.logo {
+    position: relative;
+    left: 30px;
+    display: inline;
+    height: 80%;
+    width: 30%;
+}
+
+.img-1 {
+    height: 70%;
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.gif-project {
+    height: 90%;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+
+.project-tile {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+
+.link-default{
+    position: relative;
+    font-size: 1.17em;
+    font-weight: bolder;
+    padding: 20px;
+    top: 20px;
+    color: #111;
+}
+
+.modo {
+    z-index: 2;
+    cursor: pointer;
+    position: absolute;
+    left: 89%;
+    top: 5px;
+    border-radius: 20px;
+    background: #fefbf5;
+    color: #111;
+    border-color: #111;
+    font-size: 20px;
+}
+
+.oscuro {
+    color: #fefbf5 !important;
+    background: #111 !important;
+    border-color: #fefbf5;
+}
+
+.oscuro-link {
+    color: #fefbf5 !important;
+}
+
+.oscuro-button {
+    color: #fefbf5;
+    background: #111;
+    border-color: #fefbf5;
+}
+
+.negro {
+    color: #111 !important;
+    background: none !important;
+}
+
+.outline {
+    outline: 3px solid #fefbf5 !important;
+}
+
+.onlydesktop {
+    display: none;
+}
+
+@keyframes menucolor {
+    0% {
+        background-color: #fefbf5;
+    }
+
+    15% {
+        background-color: #e6d3e3;
+    }
+
+    30% {
+        background-color: #ebadae;
+    }
+
+    60% {
+        background-color: #849db8;
+    }
+
+    90% {
+        background-color: #72a697;
+    }
+
+    100% {
+        background-color: #baa08c;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .link-nav {
+        left: 22%;
+        font-size: 15px;
+    }
+
+    #navbar {
+        height: 9%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .link-nav {
+        padding-right: 1.5em;
+    }
+
+    #navbar {
+        height: 10%;
+    }
+}
+
+/*Versión desktop*/
+@media screen and (min-width: 817px) {
+
+
+    #tier1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #menu-movil {
+        display: none;
+    }
+
+    #navbar {
+        display: block;
+        height: 80px;
+        animation: none;
+    }
+
+    #navbar.scrolled {
+        animation-fill-mode: forwards;
+        animation: menucolor 10s infinite;
+        animation-direction: alternate;
+    }
+
+    #welcome-section {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #modo {
+         z-index: 10;
+        top: 5px;
+        right: 5px;
+        position: fixed;
+        background: none; 
+    }
+
+    #proyecto-1, #proyecto-2, #proyecto-5 {
+        padding-top: 50px;
+        height: 80%;
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 50px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    #proyecto-3, #proyecto-4, #proyecto-6, #proyecto-7 {
+        padding-top: 50px;
+        height: 50%;
+        width: 50%;
+        padding-bottom: 50px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    #imgAnimate, #imgAnimate-2, #imgAnimate-3, #imgAnimate-4, #imgAnimate-5, #imgAnimate-6, #imgAnimate-7 {
+        transition: all 300ms ease-in;
+    }
+
+    #link-1, #link-2, #link-3, #link-4, #link-5, #link-6, #link-7 {
+        transition: all 300ms ease-in;
+    }
+    #proyecto-1:hover #imgAnimate,
+    #proyecto-1:hover #link-1,
+    #proyecto-2:hover #imgAnimate-2,
+    #proyecto-2:hover #link-2,
+    #proyecto-3:hover #imgAnimate-3,
+    #proyecto-3:hover #link-3,
+    #proyecto-4:hover #imgAnimate-4,
+    #proyecto-4:hover #link-4,
+    #proyecto-5:hover #imgAnimate-5,
+    #proyecto-5:hover #link-5,
+    #proyecto-6:hover #imgAnimate-6,
+    #proyecto-6:hover #link-6,
+    #proyecto-7:hover #imgAnimate-7,
+    #proyecto-7:hover #link-7 {
+        transform: translateY(-20px);
+        font-size: 22px;
+        height: 95%;
+        width: 95%;
+    }
+
+    #link-1, #link-2 {
+        position: relative;
+    }
+
+     #logo:hover, #logo-2:hover, #logo-3:hover, #logo-4:hover, #logo-5:hover, #logo-6:hover, #logo-7:hover, #logo-8:hover {
+        font-size: 50px;
+    }
+
+    #logo-8 {
+        padding-top: 0;
+    }
+
+    .tier2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        height: 40px;
+        width: 180px;
+    }
+
+    .link-nav {
+        right: 0;
+        font-size: 18px;
+        padding-right: 3em;
+    }
+
+    .titulo {
+        display: none;
+    }
+
+    .presentacion {
+        flex: 0 0 50%;
+        padding: 20px;
+        position: relative;
+        justify-self: center;
+        align-self: center;
+        margin: 0 auto;
+        font-size: 23px;
+        outline: 3px solid #111;
+    }
+
+    .project-tile {
+        margin: 0;
+        padding: 0;
+    }
+
+    .img-1 {
+        flex: 100% 0 50%;
+        height: 100%;
+        width: 100%;
+    }
+
+    .modo {
+        z-index: 10;
+        top: -20px;
+        right: 0;
+        position: fixed;
+        font-size: 25px;
+    }
+
+    .onlydesktop {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .link-nav {
+        font-size: 20px;
+        left: 30%;
+    }
+}
